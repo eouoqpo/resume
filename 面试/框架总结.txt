@@ -1,0 +1,160 @@
+﻿框架整理总结：
+
+1.js框架 
+	(1)jQuery：https://jquery.com/
+	jQuery是一个兼容多浏览器的javascript库，核心理念是write less,do more(写得更少,做得更多)。jQuery的语法设计可以使开发更加便捷，例如操作文档对象、选择DOM元素、制作动画效果、事件处理、使用Ajax以及其他功能。除此以外，jQuery提供API让开发者编写插件。其模块化的使用方式使开发者可以很轻松的开发出功能强大的静态或动态网页。
+
+
+	(2)zepto:http://www.css88.com/doc/zeptojs/
+	Zepto.js 定位于移动端网页开发框架, 拥有和jQuery相似的语法, 但是和jQuery相比下来, 他有很多优点, 大小方面 , 压缩后的 zepto.min.js 大小只有21K, 使用服务器端 gzip 压缩后大小只有5~10K, 可以说非常的小, 但是功能很齐全, 多出来了一些触摸屏的事件(swipe,tap) , 它唯一不支持的就是万恶的IE。
+
+
+	补充：zepto与jQuery的区别
+		①jquery体积较大，适合pc端开发, zepto体积小，适合移动端开发
+		②jquery兼容ie6， zepto不兼容ie11以下的浏览器
+		③http://blog.csdn.net/kongjiea/article/details/42522305
+
+	(3)swiper：http://www.swiper.com.cn/
+	①Swiper常用于移动端网站的内容触摸滑动(例如微信场景)
+	②Swiper是纯javascript打造的滑动特效插件，面向手机、平板电脑等移动终端。
+	③Swiper能实现触屏焦点图、触屏Tab切换、触屏多图切换等常用效果。
+
+	(4)hammer.js  http://hammerjs.github.io/
+	hammer.js是一款开源的移动端脚本框架，他可以完美的实现在移端开发的大多数事件，如：点击、滑动、拖动、多点触控，手指缩放等事件。不需要依赖任何其他的框架，并且整个框架非常小。
+
+	(5)wow.js  http://mynameismatthieu.com/WOW/ 
+
+	在页面滚动时展现动感的元素动画效果，你可以改变动画设置喜欢的风格、延迟、长度、偏移和重复次数等。
+
+	(6)angularJs http://www.apjs.net/#dir1
+	①主要构建CRUD（增加Create、查询Retrieve、更新Update、删除Delete）的应用应用以及SPA(单页面应用)，
+	②构建一个CRUD应用可能用到的全部内容包括：数据绑定、基本模板标识符、表单验证、路由、组件重用、依赖注入。
+	③AngularJS有着诸多特性，最为核心的是：MVVM、模块化、MVC、语义化标签、依赖注入等等。
+
+
+	(7)requirejs  http://www.requirejs.cn/
+	是js加载器，是AMD(异步，模块，依赖)加载模式的典范
+	①实现JS文件的异步加载，避免网页被堵塞。
+    ②管理模块之间的依赖性，便于代码的编写和维护。
+	③define方式声明定义模块， require方式加载模块。
+
+2.css框架
+	(1)animate.css https://daneden.github.io/animate.css/
+	Animate.css内置了很多典型的css3动画，兼容性好使用方便，我们只需要在使用时引入class"animated 动画效果"
+
+	(2)bootstrap  http://www.bootcss.com/ 
+	pc端的响应式框架
+	①Bootstrap，来自 Twitter，是目前最受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。
+	②Bootstrap 基本结构、Bootstrap CSS、Bootstrap 布局组件和 Bootstrap 插件几个部分。
+	③支持响应式设计
+	④12栅格系统
+
+3.css预处理器
+
+	LESS和SASS，它在 CSS 的语法基础之上，引入了变量，Mixin（混入），运算(加减乘除)以及函数等功能，大大简化了 CSS 的编写，并且降低了 CSS 的维护成本，都有一套代码编写规则，以及对应的编译器
+
+	(1)Sass http://www.w3cplus.com/sassguide/
+		sass是一种对css的一种提升，可以通过编译生成浏览器能识别的css文件。sass技术的文件的后缀名有两种形式：.sass和.scss。这两种的区别在于.sass文件对代码的排版有着非常严格的要求，而且没有大括号，没有分号。
+		$color: #4D926F; 定义变量
+	(2)less http://www.1024i.com/demo/less/
+		 @color: #4D926F; 定义变量
+4.构建工具
+	(1)gulp http://www.gulpjs.com.cn/
+
+	①gulp是前端开发过程中对代码进行构建的工具，是自动化项目的构建利器；她不仅能对网站资源进行优化，而且在开发过程中很多重复的任务能够使用正确的工具自动完成；使用她，我们不仅可以很愉快的编写代码，而且大大提高我们的工作效率。
+
+	②gulp是基于Nodejs的自动任务运行器， 她能自动化地完成 javascript/coffee/sass/less/html/image/css 等文件的的测试、检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的这些步骤。
+
+
+5.混合应用开发
+	(1)微信JS-SDK  http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html
+	①微信JS-SDK是微信公众平台面向网页开发者提供的基于微信内的网页开发工具包。
+	
+	②通过使用微信JS-SDK，网页开发者可借助微信高效地使用拍照、选图、语音、位置等手机系统的能力，同时可以直接使用微信分享、扫一扫、卡券、支付等微信特有的能力，为微信用户提供更优质的网页体验。
+
+	注意:在wx.config把算出的签名赋值到相应位置，在wx.ready里面执行相关硬件接口的访问与操作。
+
+	(2)phonegap http://phonegap.com/  侧重于工具的开发以及云编译
+	①phonegap desktop :桌面版phonegap服务器， 开启后， 只要改变代码，
+	浏览器页面以及手机版phonegap的页面自动刷新，方便开发者预览页面效果
+
+	②phonegap mobile app ：该应用内部已经集成了访问硬件的的native代码，
+	只需要在页面调用js接口方法，就可以访问设备硬件功能。让我们开发者只需要关注在页面的开发以及js接口的调用。
+
+	(3)cordova http://cordova.apache.org/  混合开发的核心引擎
+
+	①Cordova提供了一组设备相关的API，通过这组API，移动应用能够以JavaScript访问原生的设备功能，如摄像头、麦克风、联系人、传感器、文件系统、地理位置信息、网络信息、震动等。
+	②Cordova还提供了一组统一的JavaScript类库，以及为这些类库所用的设备相关的原生后台代码。
+	③Cordova支持如下移动操作系统：iOS, Android,ubuntu phone os, Blackberry, Windows Phone, Palm WebOS, Bada 和 Symbian。
+	④Cordova是贡献给Apache后的开源项目，是从PhoneGap中抽出的核心代码，是驱动PhoneGap的核心引擎。你可以把它们的关系想象成类似于Webkit和Google Chrome的关系。
+	⑤接口方法都是navigator对象下面的方法。
+	⑥cordova create myproject
+	 cordova plugin add cordova-plugin-****
+	 cordova platform add android
+	 编译部分： 不建议使用命令行cordova build android，
+	 建议导入android studio 编辑器进行编译。
+
+	
+6.移动端UI框架：
+	(1), mui,  dcloud 公司提供的移动开发UI框架
+  	http://dev.dcloud.net.cn/mui/ui/
+
+	(2). sui Mobile 阿里巴巴共享业务事业部UED团队开发的UI库
+ 	http://m.sui.taobao.org/
+
+	(3). weiUI
+ 	https://github.com/weui/weui
+	WeUI 是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信 Web 开发量身设计，可以令用户的使用感知更加统一。包含button、cell、dialog、 progress、 toast、	article、actionsheet、icon等各式元素。
+	 https://weui.io/  效果地址
+
+	(4). framework7 
+	Framework7 是一个开源免费的框架可以用来开发混合移动应用（原生和HTML混合）或者开发 iOS & Android 风格的WEB APP
+	http://www.framework7.cn/
+
+面试自问：在心里自己问问自己，是否能回答上来.以下不用写在简历中。
+
+
+	1.你们公司的业务，
+	外包公司？外派公司？自己有产品的公司？知道什么类型的公司，才能决定你的项目经验写什么项目。
+
+	2.项目的规模？ 2个前端，2个后台，1个UI？可以灵活变通
+
+	3.项目周期(可以写在简历中，也可以不用写)，但是不写不代表对方不问。
+
+	4.项目的流程也就是实际工作的流程。
+
+	(1)进到公司接手的是老项目（这个项目已经做完一个版本）
+	流程：
+		老人跟你进行项目简介，业务介绍，给你3~5天时间熟悉项目，
+	熟悉代码，如果客户提出新的需求，或者对之前的变更，我们要做的就是在读懂别人的代码基础上，进行代码修改，这也是我强调为啥要经常"读"代码。
+		当然在这种老项目中，可能会遇到一个问题，就是bug修改，先看bug现象，再看检查工具， 最后再捋一遍代码,找出错误.
+
+	(2)进到公司接手的正在进行的项目(这个项目第一个版本大家正在做)
+	流程:
+		老人跟你进行项目简介,业务介绍,给你1~2天时间熟悉业务,组长给你分配项目的页面或者某一模块,我们要做的就是 在规定的时间内完成页面设计, 当然要自己模拟json数据, 因为后台还没开发完呢, 等后台开发完后, ajax请求的真正的接口就可以了.
+
+	(3)进到公司接手的是新项目(老板就等你呢, 等你支锅烧饭)
+	流程:恭喜你 ,自己从0开始
+
+		①根据UI设计图, 进行静态页面布局.(先搭起页面骨架，在再根据design设计页面细节)
+		
+		②根据业务逻辑， 弄清楚哪一部分节点是根据后台返回的数据动态创建生成的
+		
+		③找到哪部分是动态生成后，跟后台定义好json数据格式，自己在本地写出json模拟文件（因为后台代码没写完呢）
+			注意下：如果后台业务逻辑比较少，或者前台干的太慢的话，后台比我们前台写的块， 那么不需要我们用json文件模拟， 直接用ajax请求真实的后台接口就可以。
+
+		
+		④根据自己模拟的json文件， 动态布局。
+		
+		⑤自己本地测试，修改bug
+		
+		⑥等后台做完后， 把json文件 换成真是接口地址， 跟后台联合调试，肯定会遇到一些数据格式不匹配的问题， 如果是对方的责任，让对方修改。
+		
+		⑦联合测试， 修改bug。(这一部分需要跟后台人员不断磨合，正好学习一下后台技术)
+		
+		⑧项目构建（当然有的项目在骨架搭建完成后，就已经引入了项目构建工具gulp，不同的架构师的选择方式不一样）
+		
+		⑨测试，发布，上线，测试...
+
+	(4)进到公司的还没有项目(先打两天酱油吧)
+	流程:别打酱油啊，好好学习吧,打探公司用的主流技术， 赶紧充电吧...
